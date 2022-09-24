@@ -1,0 +1,36 @@
+
+pip install geocoder
+
+python
+
+import geocoder
+
+print(geocoder.ip('me').latlng)
+
+https://api.openweathermap.org/data/2.5/forecast?lat=-21.1306&lon=-42.3664&units=metric&appid=chavenosite
+
+http://localhost:8888/sources/0/chronograf/data-explorer
+
+
+//----------------------------------------------
+//Entrar na area de usuario
+cd Desktop
+
+
+// subir o dokercompose
+docker-compose up
+
+//----------------------------------------------------
+quries de execução dentro  Chonograf
+
+Select main_temp from openweather.autogen.weather
+
+Select main_temp from openweather.autogen.weather WHERE time>now()+2d
+
+Select MIN(main_temp), MAX(main_temp) from openweather.autogen.weather
+
+Select (MAX(main_temp)-MIN(main_temp)) as amplitude from openweather.autogen.weather
+
+Select (MAX(main_temp)-MIN(main_temp)) as amplitude from openweather.autogen.weather WHERE time>now()+3d
+
+Select feels_like, main_temp FROM openweather.autogen.weather 
